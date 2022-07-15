@@ -10,12 +10,12 @@ const RecipeHomePage = () => {
     <>
       <Navbar />
       <Box>
-        <VStack mt={15} divider={<StackDivider borderColor="gray.200" />}>
-          <Heading mb={20}>
+        <VStack mt={20} divider={<StackDivider borderColor="gray.200" />}>
+          <Heading mb={15}>
             <Text>Your Recipes</Text>
           </Heading>
           {recipes.map((recipe) => (
-            <RecipeCard>{recipe}</RecipeCard>
+            <RecipeCard />
           ))}
 
           {/* <RecipeCard /> */}
